@@ -1,23 +1,18 @@
 {
   "app": "Godensio Desk",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "date": "2026-11-21",
   "notes": [
-    "7-day free trial on every desk",
-    "Update available button and cancelled tokens",
-    "Phone and tablet layouts",
-    "Undo and redo in Release, Notes, Invoices and Forms",
-    "First-run tour in every desk",
-    "Dubbing: built-in translation and voices on Android and the web"
+    "TEST: checking that update notices work. You can ignore this."
   ],
   "downloads": {
-    "mac-arm": "https://github.com/S3v3n-JG/Godensio-Desk/releases/download/v1.1.0/Godensio-Desk-macOS-Apple-Silicon.zip",
-    "mac-intel": "https://github.com/S3v3n-JG/Godensio-Desk/releases/download/v1.1.0/Godensio-Desk-macOS-Intel.zip",
-    "win": "https://github.com/S3v3n-JG/Godensio-Desk/releases/download/v1.1.0/Godensio-Desk-Windows.zip",
-    "android": "https://github.com/S3v3n-JG/Godensio-Desk/releases/download/v1.1.0/Godensio-Desk-Android.apk",
-    "web": "https://github.com/S3v3n-JG/Godensio-Desk/releases/download/v1.1.0/Godensio-Desk-Web.zip"
+    "mac-arm": "https://github.com/S3v3n-JG/Godensio-Desk/releases",
+    "mac-intel": "https://github.com/S3v3n-JG/Godensio-Desk/releases",
+    "win": "https://github.com/S3v3n-JG/Godensio-Desk/releases",
+    "android": "https://github.com/S3v3n-JG/Godensio-Desk/releases",
+    "web": "https://github.com/S3v3n-JG/Godensio-Desk/releases"
   },
-  "page": "https://github.com/S3v3n-JG/Godensio-Desk/releases/latest",
+  "page": "https://github.com/S3v3n-JG/Godensio-Desk/releases",
   "revoked": [],
-  "made": "2026-11-21T13:40:00Z"
+  "made": "2026-11-21T14:00:00Z"
 }
