@@ -18,8 +18,23 @@ Every desk is free for 7 days. After that you need an access token: email plug.i
 
 ## Updates
 
-The app checks this repository about once a day. When a new version is out, an **Update available** button appears at the top. You can also check any time: press ⌘K (Ctrl+K) and choose **Check for updates**, or use Help → Check for updates in the Mac and Windows app. Your projects, Library and settings stay as they are when you update.
+The app checks for a new version each time it opens. When one is out, an **Update available** button appears at the top. You can also check any time: open the **Library** (books icon) → **Updates** → **Check for updates**, press ⌘K (Ctrl+K) → **Check for updates**, or use Help → Check for updates in the Mac and Windows app.
+
+**Download and install** does the update inside the app:
+
+- **Mac and Windows:** the app downloads the new version, closes, replaces itself and opens again. On a Mac there's no Terminal step after an in-app update.
+- **Android:** the app downloads the new version and opens Android's installer; tap **Install**. The first time, Android asks you to allow Godensio Desk to install apps.
+- **Web version:** download the new zip and unzip it over the old folder.
+
+Your projects, Library and settings stay as they are.
 
 ## For the publisher
 
 `feed.json` tells the apps the newest version, where to download it and which access tokens were cancelled. Make it in the Token Generator (Updates tab) and replace the file here.
+
+To release a new version:
+1. Raise the version number and build the five files.
+2. Create a GitHub Release with the tag `v` + the version (for example `v1.2.0`) and attach the five files with these exact names: `Godensio-Desk-macOS-Apple-Silicon.zip`, `Godensio-Desk-macOS-Intel.zip`, `Godensio-Desk-Windows.zip`, `Godensio-Desk-Android.apk`, `Godensio-Desk-Web.zip`.
+3. Update `feed.json` with the new version. The apps pick it up the next time they open.
+
+The apps look for `feed.json` in **Godensio-Desk-Releases** first and in this repository as a backup, so this repository can be made private once a public **Godensio-Desk-Releases** repository holds `feed.json` and the Releases.
