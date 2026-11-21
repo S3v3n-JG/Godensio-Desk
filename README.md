@@ -38,3 +38,14 @@ To release a new version:
 3. Update `feed.json` with the new version. The apps pick it up the next time they open.
 
 The apps look for `feed.json` in **Godensio-Desk-Releases** first and in this repository as a backup, so this repository can be made private once a public **Godensio-Desk-Releases** repository holds `feed.json` and the Releases.
+
+### Token Generator and GitHub
+
+In the Token Generator, open **Updates → GitHub connection** and paste a fine-grained GitHub key (Contents: Read and write, only for the repos below). Then:
+
+- **Cancel token**, **Pause**, **Resume** and **Move to a new device** publish the cancelled list to `feed.json` straight away.
+- **Publish to GitHub** sends a new version's `feed.json` in one step (create the Release with the five files first).
+- The issued-token list is kept in a **private** repo as `tokens.enc.json`, encrypted with the generator passphrase, so every copy of the generator shows the same list. The generator refuses to put it in a public repo.
+
+The GitHub key is stored inside the generator's locked vault. It is never built into the apps.
+
